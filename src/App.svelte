@@ -1,13 +1,23 @@
 <script lang="ts">
-  const helloWorld = "Hello World";
+  import Title from "./components/Title.svelte";
 </script>
 
-<main>
-  <h1 class="hello-world">{helloWorld}</h1>
-</main>
+<div class="app">
+  <header>
+    <Title />
+  </header>
+</div>
 
 <style>
-  .hello-world {
-    color: red;
+  .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 </style>
